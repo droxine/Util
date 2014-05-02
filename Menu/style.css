@@ -1,0 +1,253 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: verdana;
+}
+
+body{
+	background-color: #E8E3E3;
+}
+
+
+/***************************************
+	-- HEADING --
+***************************************/
+
+header{
+	margin:auto;
+	margin-top: 0px;
+	max-width:1200px;
+	height: 230px;
+}
+div.contenedor{
+	width: 200px;
+	height: 230px;
+	float:left;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-transition: height .4s;
+	-moz-transition: height .4s;
+	-ms-transition: height .4s;
+	-o-transition: height .4s;
+	transition: height .4s;
+}
+
+div#uno{
+	/*background-color: rgb(208,101,3);*/
+	background-color: #8D4973;
+}
+
+div#dos{
+	/*background-color: rgb(233,147,26);*/
+	background-color: #B87242;
+}
+
+div#tres{
+	/*background-color: rgb(22,145,198);*/
+	background-color: #2F9BCA;
+}
+
+div#cuatro{
+	/*background-color: rgb(22,187,162);*/
+	background-color: #6CAA67;
+}
+
+div#cinco{
+	/*background-color: rgb(27,54,71);*/
+	background-color: #344356;
+}
+
+div#seis{
+	/*background-color: rgb(21,48,54);*/
+	background-color: #003259;
+}
+
+img.icon{
+	display: block;
+	margin: 50px auto;
+	background-color: rgba(255,255,255,0.15);
+	width: 40px;
+	padding: 20px;
+	--webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-moz-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition: box-shadow .4s;
+	-moz-transition: box-shadow .4s;
+	-ms-transition: box-shadow .4s;
+	-o-transition: box-shadow .4s;
+	transition: box-shadow .4s;
+}
+
+p.texto{
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	opacity: 0.6;
+	-webkit-transition: padding-top .4s;
+	-moz-transition: padding-top .4s;
+	-ms-transition: padding-top .4s;
+	-o-transition: padding-top .4s;
+	transition: padding-top .4s;
+}
+
+/***************************************
+	-- Pseudo classes HEADER --
+***************************************/
+
+div.contenedor:hover{
+	height: 250px;
+}
+
+div.contenedor:hover p.texto{
+	padding-top: 30px;
+	opacity: 1;
+}
+
+div.contenedor:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6); 
+}
+
+
+/***************************************
+	-- SUPPORT - VERTICAL BUTTON --
+***************************************/
+section#contact{
+	float:right;
+}
+
+/*
+#support{
+	float:right;
+	vertical-align: middle;
+	display: block;
+	width: 200px;
+	height: 32px;
+	background-color: #47C0DC;
+	color: #fff;
+	display: block;
+	-webkit-transform: rotate(90deg);
+}
+
+div span{
+	padding: 10px;
+	padding-right: 17px;
+}*/
+
+/*--botones--*/
+
+.wrapper{
+	float:right;
+	list-style: none;
+	/*-145*/
+	margin-right: 0px;
+}
+
+.wrapper li{
+	padding: 15px 0 10px 30px;
+	margin: 10px 0 0 20px;
+}
+
+.wrapper li a{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	margin: 0 0 0 0;
+}
+
+.wrapper li a.twitter{
+	background-image: url('imag/twitter.png');
+	padding: 19px 0 28px 63px;
+}
+.wrapper li a.treehouse{
+	background-image: url('imag/treehouse.png');
+	padding: 5px 0 35px 63px;
+}
+
+.wrapper li a.gmail{
+	background-image: url('imag/gmail.png');
+	padding: 0px 0 50px 63px;
+}
+
+.wrapper li a span{
+	visibility: hidden;
+	margin-right: 6px;
+	text-decoration: none;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.wrapper li a.twitter:hover span#tweet{
+	visibility: visible;
+}
+.wrapper li a.treehouse:hover span#tree{
+	visibility: visible;
+}
+.wrapper li a.gmail:hover span#mail{
+	visibility: visible;
+}
+
+/***************************************
+	-- SECTION BODY PRINCIPAL --
+***************************************/
+section{
+	padding-top: 100px;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+h2 {
+	padding-bottom: 20px;
+}
+
+p{
+	padding-top: 30px;
+	text-align: justify;
+	font-size: 1.0em;
+	font-family: 'Open Sans', verdana,sans-serif;
+}
+
+
+/*----about ----*/
+
+#about{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 100%;
+	height: 400px;
+	border-radius: 15px;
+
+	background-color: #56AB82;
+	color: #fff;
+}
+
+#about p{
+	font-style: italic;
+	padding-top: 150px;
+	font-family: 'Open Sans', verdana,sans-serif;
+	font-size: 2.75em;
+	text-align: center;
+}
+
+/***************************************
+	------------ FOOTER ----------
+***************************************/
+
+footer{
+	margin: 0 auto;
+	font-size: 0.75em;
+	clear: both;
+	margin-top: 200px;
+	margin-bottom: 50px;
+
+}
+ footer p{
+ 	font-weight: bold;
+	color: #737376;
+	text-align: center;
+	padding-top: 10px;
+ }
